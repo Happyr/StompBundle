@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <parameters>
+        <parameter key="happyr.stomp.broker_class">FuseSource\Stomp\Stomp</parameter>
+    </parameters>
+
+    <services>
+        <service id="happyr.stomp.broker" class="%happyr.stomp.class%">
+            <argument>%happyr.stomp.broker_uri%</argument>
+            <call method="connect"></call>
+        </service>
+    </services>
+</container>

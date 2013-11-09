@@ -1,0 +1,27 @@
+{
+    "name": "happyr/stomp-bundle",
+    "type": "symfony-bundle",
+    "description": "A Symfony2 Bundle to wrap the fusesource/stomp-php library",
+    "keywords": ["Stomp", "Message", "queue", "fusesource/stomp-php"],
+    "homepage": "http://developer.happyr.se",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Nyholm",
+            "email": "tobias@happyrecruiting.se"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "2.*",
+        "fusesource/stomp-php": "2.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "*"
+    },
+    "autoload": {
+        "psr-0": { "HappyR\\StompBundle": "" }
+    },
+    "target-dir": "HappyR/StompBundle"
+    
+}
