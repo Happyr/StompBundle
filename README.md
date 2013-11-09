@@ -34,14 +34,17 @@ $con = $this->container->get('happyr.stomp.broker');
 // send a message to the queue
 $con->send("/queue/test", "test");
 echo "Sent message with body 'test'\n";
+
 // subscribe to the queue
 $con->subscribe("/queue/test");
+
 // receive a message from the queue
 $msg = $con->readFrame();
 
 // do what you want with the message
 if ( $msg != null) {
     echo "Received message with body '$msg->body'\n";
+    
     // mark the message as received in the queue
     $con->ack($msg);
 } else {
