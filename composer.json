@@ -2,7 +2,7 @@
     "name": "happyr/stomp-bundle",
     "type": "symfony-bundle",
     "description": "A Symfony2 Bundle to wrap the fusesource/stomp-php library",
-    "keywords": ["Stomp", "Message", "queue", "fusesource/stomp-php"],
+    "keywords": ["Stomp", "Message", "queue", "fusesource stomp-php"],
     "homepage": "http://developer.happyr.se",
     "license": "MIT",
     "authors": [
