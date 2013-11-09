@@ -63,4 +63,4 @@ happy_r_stomp:
 ## More documentation
 
 Since this bundle is just a wrapper for the [fusesource/stomp-php](https://github.com/dejanb/stomp-php) library
-you should checkout [their configuration](http://stomp.fusesource.org/documentation/php/book.html)
+you should checkout [their configuration](http://stomp.fusesource.org/documentation/php/book.html).
