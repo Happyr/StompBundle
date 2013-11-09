@@ -44,7 +44,7 @@ $msg = $con->readFrame();
 // do what you want with the message
 if ( $msg != null) {
     echo "Received message with body '$msg->body'\n";
-    
+
     // mark the message as received in the queue
     $con->ack($msg);
 } else {
