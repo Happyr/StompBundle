@@ -8,7 +8,7 @@
     </parameters>
 
     <services>
-        <service id="happyr.stomp.broker" class="%happyr.stomp.class%">
+        <service id="happyr.stomp.broker" class="%happyr.stomp.broker_class%">
             <argument>%happyr.stomp.broker_uri%</argument>
             <call method="connect"></call>
         </service>
