@@ -21,7 +21,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-            ->scalarNode('borker_uri')->defaultValue('tcp://localhost:61613')->end()
+            ->scalarNode('broker_uri')->defaultValue('tcp://localhost:61613')->end()
             ->end()
         ;
 
