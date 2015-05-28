@@ -61,6 +61,7 @@ $con->disconnect();
 ```yaml
 happy_r_stomp:
     borker_uri: tcp://localhost:61613
+    client_id: ~
 ```
 
 ## More documentation

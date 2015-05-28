@@ -10,6 +10,7 @@
     <services>
         <service id="happyr.stomp.broker" class="%happyr.stomp.broker_class%">
             <argument>%happyr.stomp.broker_uri%</argument>
+            <property name="clientId" type="string">%happyr.stomp.client_id%</property>
             <call method="connect"></call>
         </service>
     </services>
