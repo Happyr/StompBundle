@@ -23,6 +23,7 @@ class HappyRStompExtension extends Extension
         $config=$this->processConfiguration($configuration, $configs);
 
         $container->setParameter('happyr.stomp.broker_uri', $config['broker_uri']);
+        $container->setParameter('happyr.stomp.client_id', $config['client_id']);
 
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
